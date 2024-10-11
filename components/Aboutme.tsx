@@ -79,7 +79,7 @@ const items = [
           My Background
         </h2>
         <p className=" font-normal text-sm md:text-base">
-          I am currently a student at CDGI. Throughout my journey, I've had the
+          I am currently a student at CDGI. Throughout my journey, Ive had the
           privilege of participating in various projects, including emerging
           victorious in both the Citro Hackathon and the Hackhive Hackathon.
           These experiences have honed my skills and fueled my passion for
@@ -132,10 +132,10 @@ const items = [
           Who am I?
         </h2>
         <p className="pb-5 font-normal text-sm md:text-base">
-          Hello! I'm Atharva Raj Singh Thakur, a passionate programmer based in
+          Hello! Im Atharva Raj Singh Thakur, a passionate programmer based in
           Indore. With a keen eye for detail and a love for creativity, I
           constantly seek ways to push the boundaries of technology. Whether
-          it's solving complex problems or building innovative solutions, my
+          its solving complex problems or building innovative solutions, my
           goal is to create meaningful, lasting impacts. I believe in the power
           of technology to transform lives and make the world a better place.
           Always eager to learn, I strive to enhance my skills while
