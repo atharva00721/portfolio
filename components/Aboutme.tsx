@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
@@ -8,12 +7,11 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import Image from "next/image";
-import { div } from "framer-motion/client";
 
 export function AboutMe() {
   return (
-    <div className="text-white max-w-[80%] mx-auto mt-5 md:mt-20">
-      <h2 id="aboutme" className="mb-5 text-4xl font-bold md:text-5xl">
+    <div className="text-white max-w-[80%] mx-auto mt-5 md:my-20">
+      <h2 className="max-w-7xl pl-4 mb-5 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         About Me
       </h2>
       <hr className="mb-5" />
