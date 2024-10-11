@@ -4,7 +4,6 @@ import {
   IconClipboardCopy,
   IconFileBroken,
   IconSignature,
-  IconTableColumn,
 } from "@tabler/icons-react";
 import Image from "next/image";
 
