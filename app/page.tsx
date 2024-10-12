@@ -1,4 +1,3 @@
-"use client";
 import { AboutMe } from "@/components/Aboutme";
 import { AuroraBackgroundDemo } from "@/components/Homeaurora";
 import { Projects } from "@/components/Projects";
