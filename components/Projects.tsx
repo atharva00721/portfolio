@@ -134,7 +134,7 @@ export function Projects() {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-full mt-10 mx-auto w-full grid grid-cols-1 md:grid-cols-3 items-center gap-0">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
@@ -237,11 +237,11 @@ const cards = [
     content: () => {
       return (
         <p>
-          Atharva's minor project, The Watcher, is an AI-powered surveillance
-          system that processes real-time CCTV footage to detect violence,
-          crimes, or accidents. By identifying unusual events and alerting
-          authorities, the project aims to enhance public safety and make
-          streets safer through proactive monitoring.
+          The Watcher, is an AI-powered surveillance system that processes
+          real-time CCTV footage to detect violence, crimes, or accidents. By
+          identifying unusual events and alerting authorities, the project aims
+          to enhance public safety and make streets safer through proactive
+          monitoring.
         </p>
       );
     },

@@ -40,19 +40,28 @@ const TechStack = () => (
       - Backend
       <p className="py-3">
         <a href="https://skillicons.dev">
-          <img src="https://skillicons.dev/icons?i=nodejs,py,flask," />
+          <img
+            src="https://skillicons.dev/icons?i=nodejs,py,flask,"
+            alt="Backend"
+          />
         </a>
       </p>
       - Frontend
       <p className="py-3">
         <a href="https://skillicons.dev">
-          <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vite,materialui&perline=4" />
+          <img
+            src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vite,materialui&perline=4"
+            alt="Frontend"
+          />
         </a>
       </p>
       - Tools
       <p className="py-2">
         <a href="https://skillicons.dev">
-          <img src="https://skillicons.dev/icons?i=git,github,vscode,notion" />
+          <img
+            src="https://skillicons.dev/icons?i=git,github,vscode,notion"
+            alt="Tools"
+          />
         </a>
       </p>
     </p>
@@ -136,10 +145,10 @@ const items = [
         <p className="pb-5 font-normal text-sm md:text-base">
           Hello! Im Atharva Raj Singh Thakur, a passionate programmer based in
           Indore. With a keen eye for detail and a love for creativity, I
-          constantly seek ways to push the boundaries of technology. Whether
-          its solving complex problems or building innovative solutions, my
-          goal is to create meaningful, lasting impacts. I believe in the power
-          of technology to transform lives and make the world a better place.
+          constantly seek ways to push the boundaries of technology. Whether its
+          solving complex problems or building innovative solutions, my goal is
+          to create meaningful, lasting impacts. I believe in the power of
+          technology to transform lives and make the world a better place.
           Always eager to learn, I strive to enhance my skills while
           contributing to projects that drive progress and inspire change.
         </p>

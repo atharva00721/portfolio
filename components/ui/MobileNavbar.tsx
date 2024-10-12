@@ -1,4 +1,4 @@
-// import { Avatar } from "@radix-ui/themes";
+import Image from "next/image";
 
 interface MobileNavbarProps {
   visible: boolean;
@@ -14,10 +14,12 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ visible }) => {
       <ul className="flex justify-around w-full">
         <li>
           <a href="#home">
-            <img
-              className="rounded-full w-[50px] h-[50px] p-0 m-0"
+            <Image
+              className="rounded-full p-0 m-0"
               src="/images/moon.png"
               alt="A"
+              width={50}
+              height={50}
             />
           </a>
         </li>
