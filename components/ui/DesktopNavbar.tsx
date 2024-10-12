@@ -1,5 +1,4 @@
 import { Avatar } from "@radix-ui/themes";
-import { ModeToggle } from "./themetoggle";
 
 interface DesktopNavbarProps {
   visible: boolean;
@@ -52,7 +51,6 @@ const DesktopNavbar: React.FC<DesktopNavbarProps> = ({ visible }) => {
           <li></li>
         </ul>
       </div>
-      <ModeToggle />
     </nav>
   );
 };
