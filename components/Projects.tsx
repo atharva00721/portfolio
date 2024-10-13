@@ -260,7 +260,7 @@ const cards = [
   {
     description: "A Video Calling Web App",
     title: "Ather Connect",
-    src: "/images/aetherconnect.png",
+    src: "/images/Aetherconnect.png",
     ctaText: "GitHub",
     ctaLink: "/",
     content: () => (
@@ -313,7 +313,7 @@ const cards = [
             priority
             width={1000}
             height={1000}
-            src={"/images/aetherconnect.png"}
+            src={"/images/Aetherconnect.png"}
             alt={"atherconnect"}
             className="w-full mt-5 rounded-xl object-cover"
           />
