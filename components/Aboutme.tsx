@@ -31,40 +31,40 @@ export function AboutMe() {
 }
 
 const TechStack = () => (
-  <div className="max-lg:w-100 bg-bg-[#1c1c1e]/0.5 p-3 rounded-xl shadow-2xl md:w-auto">
+  <div className="max-lg:w-100 bg-[#1c1c1e]/0.5 p-3 rounded-xl shadow-2xl md:w-auto">
     <h1 className="flex gap-2 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
       <IconSignature className="h-6 w-6 text-neutral-500" />
       My Skills
     </h1>
-    <p className="pt-3 md:pt-5 pb-2 font-normal text-sm md:text-base">
+    <span className="pt-3 md:pt-5 pb-2 font-normal text-sm md:text-base">
       - Backend
-      <p className="py-3">
+      <span className="py-3">
         <a href="https://skillicons.dev">
           <img
             src="https://skillicons.dev/icons?i=nodejs,py,flask,"
             alt="Backend"
           />
         </a>
-      </p>
+      </span>
       - Frontend
-      <p className="py-3">
+      <span className="py-3">
         <a href="https://skillicons.dev">
           <img
             src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,vite,materialui&perline=4"
             alt="Frontend"
           />
         </a>
-      </p>
+      </span>
       - Tools
-      <p className="py-2">
+      <span className="py-2">
         <a href="https://skillicons.dev">
           <img
             src="https://skillicons.dev/icons?i=git,github,vscode,notion"
             alt="Tools"
           />
         </a>
-      </p>
-    </p>
+      </span>
+    </span>
   </div>
 );
 
@@ -153,12 +153,5 @@ const items = [
       </div>
     ),
     className: "md:col-span-2",
-  },
-  //   {
-  //     title: "The Art of Design",
-  //     description: "Discover the beauty of thoughtful and functional design.",
-  //     header: <Skeleton />,
-  //     className: "md:col-span-2",
-  //     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
-  //   },
+  }
 ];

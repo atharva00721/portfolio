@@ -23,10 +23,10 @@ export function Projects() {
     } else {
       document.body.style.overflow = "auto";
     }
+
     if (typeof window !== "undefined") {
       window.addEventListener("keydown", onKeyDown);
       return () => window.removeEventListener("keydown", onKeyDown);
-      console.log(window.innerWidth);
     }
   }, [active]);
 
@@ -55,18 +55,9 @@ export function Projects() {
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
-              initial={{
-                opacity: 0,
-              }}
-              animate={{
-                opacity: 1,
-              }}
-              exit={{
-                opacity: 0,
-                transition: {
-                  duration: 0.05,
-                },
-              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0, transition: { duration: 0.05 } }}
               className="flex absolute top-0 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
               onClick={() => setActive(null)}
             >
@@ -75,7 +66,7 @@ export function Projects() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-3xl  h-full md:h-[90%] md:max-h-[100%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-3xl h-full md:h-[90%] md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-auto noscrollbarFirefox noscrollbarIE noscrollbarChrome"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -91,9 +82,12 @@ export function Projects() {
               <div>
                 <div className="flex justify-between items-start p-4">
                   <div className="">
+                    <motion.p className="text-white text-sm md:text-base font-medium font-sans text-left">
+                      {active.category}
+                    </motion.p>
                     <motion.h3
                       layoutId={`title-${active.title}-${id}`}
-                      className="font-medium text-neutral-700 dark:text-neutral-200 text-base"
+                      className="text-white text-xl md:text-3xl font-semibold max-w-xs text-left [text-wrap:balance] font-sans mt-2"
                     >
                       {active.title}
                     </motion.h3>
@@ -104,7 +98,6 @@ export function Projects() {
                       {active.description}
                     </motion.p>
                   </div>
-
                   <motion.a
                     layout
                     initial={{ opacity: 0 }}
@@ -123,7 +116,7 @@ export function Projects() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400  [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -135,22 +128,22 @@ export function Projects() {
           </div>
         ) : null}
       </AnimatePresence>
-      <ul className="max-w-full mt-10 mx-auto w-full grid grid-cols-1 md:grid-cols-3 items-center gap-0">
+      <ul className="max-w-full bg-[#1c1c1e] rounded-xl mt-10 mx-auto w-full grid grid-cols-1 md:grid-cols-3 items-center gap-0">
         {cards.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => setActive(card)}
-            className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+            className="p-4 flex flex-col hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
-            <div className="flex gap-4 flex-col  w-full">
+            <div className="flex gap-4 flex-col w-full">
               <motion.div layoutId={`image-${card.title}-${id}`}>
                 <Image
                   width={500}
                   height={500}
                   src={card.src}
                   alt={card.title}
-                  className="h-60 w-full  rounded-lg object-cover object-top"
+                  className="h-60 w-full rounded-lg object-cover object-top"
                 />
               </motion.div>
               <div className="flex justify-center items-center flex-col">
@@ -166,6 +159,10 @@ export function Projects() {
                 >
                   {card.description}
                 </motion.p>
+                {/* Display the category on the card */}
+                {/* <motion.p className="text-base font-medium text-black dark:text-white">
+                  {card.category}
+                </motion.p> */}
               </div>
             </div>
           </motion.div>
@@ -178,18 +175,9 @@ export function Projects() {
 export const CloseIcon = () => {
   return (
     <motion.svg
-      initial={{
-        opacity: 0,
-      }}
-      animate={{
-        opacity: 1,
-      }}
-      exit={{
-        opacity: 0,
-        transition: {
-          duration: 0.05,
-        },
-      }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.05 } }}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -215,9 +203,15 @@ const cards = [
     src: "/images/Todos.png",
     ctaText: "GitHub",
     ctaLink: "/",
-    content: () => {
-      return <p>Simple ToDo web app made with React.js.</p>;
-    },
+    content: () => (
+      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
+        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          Simple ToDo web app made with React.js. Build with Reactjs and
+          tailwind css
+        </p>
+      </div>
+    ),
+    category: "Web Development",
   },
   {
     description: "Aether Connect",
@@ -225,49 +219,67 @@ const cards = [
     src: "/images/Aetherconnect.png",
     ctaText: "Visit",
     ctaLink: "https://aetherconnect.vercel.app/",
-    content: () => {
-      return <p>A Video Calling app made with Next.js.</p>;
-    },
+    content: () => <p>A Video Calling app made with Next.js.</p>,
+    category: "Real-time Communication",
   },
-
   {
     description: "The Watcher",
     title: "An AI based Surveillance System",
     src: "/images/theWatcher.png",
     ctaText: "GitHub",
     ctaLink: "/",
-    content: () => {
-      return (
-        <p>
-          The Watcher, is an AI-powered surveillance system that processes
-          real-time CCTV footage to detect violence, crimes, or accidents. By
-          identifying unusual events and alerting authorities, the project aims
-          to enhance public safety and make streets safer through proactive
-          monitoring.
+    content: () => (
+      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
+        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700 dark:text-neutral-200">
+            The Watcher
+          </span>
+          , an AI-powered surveillance system that processes real-time CCTV
+          footage to detect violence, crimes, or accidents. By identifying
+          unusual events and alerting authorities, the project aims to enhance
+          public safety.
         </p>
-      );
-    },
+      </div>
+    ),
+    category: "AI/ML",
   },
-  //   {
-  //     description: "Lord Himesh",
-  //     title: "Aap Ka Suroor",
-  //     src: "https://assets.aceternity.com/demos/aap-ka-suroor.jpeg",
-  //     ctaText: "Visit",
-  //     ctaLink: "https://ui.aceternity.com/templates",
-  //     content: () => {
-  //       return (
-  //         <p>
-  //           Himesh Reshammiya, a renowned Indian music composer, singer, and
-  //           actor, is celebrated for his distinctive voice and innovative
-  //           compositions. Born in Mumbai, India, he has become a prominent figure
-  //           in the Bollywood music industry. <br /> <br /> His songs often feature
-  //           a blend of contemporary and traditional Indian music, capturing the
-  //           essence of modern Bollywood soundtracks. With a career spanning over
-  //           two decades, Himesh Reshammiya has released numerous hit albums and
-  //           singles that have garnered him a massive fan following both in India
-  //           and abroad.
-  //         </p>
-  //       );
-  //     },
-  //   },
+  {
+    description: "Lord Himesh",
+    title: "Aap Ka Suroor",
+    src: "/images/theWatcher.png",
+    ctaText: "Discover",
+    ctaLink: "/",
+    content: () => (
+      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
+        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans min-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700 dark:text-neutral-200">
+            Himesh Reshammiya
+          </span>{" "}
+          , a renowned Indian music composer, singer, and actor, is celebrated
+          for his distinctive voice and innovative compositions. Born in Mumbai,
+          India, he has become a prominent figure in the Bollywood music
+          industry. <br /> <br /> His songs often feature a blend of
+          contemporary and traditional Indian music, capturing the essence of
+          modern Bollywood soundtracks. With a career spanning over two decades,
+          Himesh Reshammiya has released numerous hit albums and singles that
+          have garnered him a massive fan following both in India and abroad.
+          Himesh Reshammiya, a renowned Indian music composer, singer, and
+          actor, is celebrated for his distinctive voice and innovative
+          compositions. Born in Mumbai, India, he has become a prominent figure
+          in the Bollywood music industry. <br /> <br /> His songs often feature
+          a blend of contemporary and traditional Indian music, capturing the
+          essence of modern Bollywood soundtracks. With a career spanning over
+          two decades, Himesh Reshammiya has released numerous hit albums and
+          singles that have garnered him a massive fan following both in India
+          and abroad.
+        </p>
+        <div className="my-3">
+          <br />
+        </div>
+      </div>
+    ),
+    category: "Entertainment",
+  },
 ];
+
+
