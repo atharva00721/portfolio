@@ -3,7 +3,6 @@ import { AboutMe } from "@/components/Aboutme";
 import { AuroraBackgroundDemo } from "@/components/Homeaurora";
 import { Projects } from "@/components/Projects";
 import Navbar from "@/components/ui/Navbar";
-import { Element } from "react-scroll";
 
 export default function Home() {
   return (
