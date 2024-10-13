@@ -1,4 +1,6 @@
 import { Avatar } from "@radix-ui/themes";
+import { Link } from 'react-scroll';
+
 
 interface DesktopNavbarProps {
   visible: boolean;
@@ -30,22 +32,22 @@ const DesktopNavbar: React.FC<DesktopNavbarProps> = ({ visible }) => {
         <ul className="flex justify-around">
           <li>
             <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-              <a href="#home">Home</a>
+              <Link to="home" smooth={true} duration={500}>Home</Link>
             </h5>
           </li>
           <li>
             <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-              <a href="#aboutme">About Me</a>
+              <Link to="aboutme" smooth={true} duration={500}>About Me</Link>
             </h5>
           </li>
           <li>
             <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-              <a href="#projects">Portfolio</a>
+              <Link to="projects" smooth={true} duration={500} >Projects</Link>
             </h5>
           </li>
           <li>
             <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-              <a href="#contact">Contact</a>
+              <Link to="projects" smooth={true} duration={500} >Achievements</Link>
             </h5>
           </li>
           <li></li>

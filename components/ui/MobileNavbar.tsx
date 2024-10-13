@@ -1,4 +1,6 @@
 import Image from "next/image";
+// import Link from "next/link";
+import { Link } from "react-scroll";
 
 interface MobileNavbarProps {
   visible: boolean;
@@ -13,7 +15,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ visible }) => {
     >
       <ul className="flex justify-around w-full">
         <li>
-          <a href="#home">
+          <Link to="home" smooth={true} duration={500}>
             <Image
               className="rounded-full p-0 m-0"
               src="/images/moon.png"
@@ -21,33 +23,30 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ visible }) => {
               width={50}
               height={50}
             />
-          </a>
+          </Link>
         </li>
-        <li>
-          {/* <h4 className="text-pink-500 uppercase tracking-wide font-bold pl-2 my-auto">
-            Moon
-          </h4> */}
-        </li>
+        <li></li>
       </ul>
       <ul className="flex justify-around w-full items-center">
-        {/*<li>
-           <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-small">
-            Home
-          </h5> 
-        </li>*/}
         <li>
           <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium text-center">
-            <a href="#aboutme">Me</a>
+            <Link to="aboutme" smooth={true} duration={500}>
+              Me
+            </Link>
           </h5>
         </li>
         <li>
           <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-            <a href="#projects">Portfolio</a>
+            <Link to="projects" smooth={true} duration={500} href="#projects">
+              Projects
+            </Link>
           </h5>
         </li>
         <li>
           <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-            <a href="#contact">Contact</a>
+            <Link to="projects" smooth={true} duration={500}>
+              Achievements
+            </Link>
           </h5>
         </li>
       </ul>

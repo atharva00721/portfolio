@@ -34,7 +34,7 @@ export function Projects() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <div className="text-white max-w-[80%] mx-auto mt-5 md:my-20">
+    <div className="text-white max-w-[80%] mx-auto mt-5 md:my-20" id="projects">
       <h2 className="max-w-7xl mx-auto text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans ">
         Projects
       </h2>
