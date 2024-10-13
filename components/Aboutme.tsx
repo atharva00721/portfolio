@@ -31,7 +31,7 @@ export function AboutMe() {
 }
 
 const TechStack = () => (
-  <div className="max-lg:w-100 bg-[#1c1c1e]/0.5 p-3 rounded-xl shadow-2xl md:w-auto">
+  <div className="max-lg:w-100 bg-[#24292e] p-3 rounded-xl shadow-2xl md:w-auto">
     <h1 className="flex gap-2 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
       <IconSignature className="h-6 w-6 text-neutral-500" />
       My Skills
@@ -136,11 +136,11 @@ const items = [
     description: <TechStack />,
     header: (
       <div>
-        <h2 className="flex gap-2 font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
+        <h2 className="flex gap-1 font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
           <IconFileBroken className="h-6 w-6 text-neutral-500" />
           Who am I?
         </h2>
-        <p className="pb-5 font-normal text-sm md:text-base">
+        <p className="font-normal text-sm md:text-base">
           Hello! Im Atharva Raj Singh Thakur, a passionate programmer based in
           Indore. With a keen eye for detail and a love for creativity, I
           constantly seek ways to push the boundaries of technology. Whether its

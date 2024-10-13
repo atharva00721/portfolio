@@ -13,17 +13,34 @@
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
-/* hide page scrollbar */
+
 html { scrollbar-width: none; } /* Firefox */
 body { -ms-overflow-style: none; } /* IE and Edge */
 body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
-/* end hide page scrollbar */
 
-/* hide page scrollbar */
+
 .noscrollbarFirefox { scrollbar-width: none; } /* Firefox */
 .noscrollbarIE { -ms-overflow-style: none; } /* IE and Edge */
 .noscrollbarChrome body::-webkit-scrollbar, body::-webkit-scrollbar-button { display: none; } /* Chrome */
-/* end hide page scrollbar */
+
+.code-block {
+
+  font-family: monospace;
+
+  font-size: 16px;
+
+  line-height: 1.5;
+  color: white;
+  white-space: pre-wrap;
+
+  background-color: #24292e; 
+  width: fit-content;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: 1px solid #454545;
+  border-radius: 5px;
+ 
+}
 
 @layer base {
   :root {

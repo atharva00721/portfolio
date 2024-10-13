@@ -7,7 +7,7 @@ interface DesktopNavbarProps {
 const DesktopNavbar: React.FC<DesktopNavbarProps> = ({ visible }) => {
   return (
     <nav
-      className={`z-50 flex justify-between fixed top-0 left-1/2 transform -translate-x-1/2 glassmorphism2 text-white mt-5 rounded-2xl px-5 py-4 shadow-md w-5/6 transition-all duration-300 ${
+      className={`z-40 flex justify-between fixed top-0 left-1/2 transform -translate-x-1/2 glassmorphism2 text-white mt-5 rounded-2xl px-5 py-4 shadow-md w-5/6 transition-all duration-300 ${
         !visible ? "transform -translate-y-[100px]" : ""
       }`}
     >
