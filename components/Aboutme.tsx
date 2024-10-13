@@ -1,8 +1,8 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
-  IconClipboardCopy,
-  IconFileBroken,
+  IconBrandPrisma,
+  IconUser,
   IconSignature,
 } from "@tabler/icons-react";
 import Image from "next/image";
@@ -33,7 +33,7 @@ export function AboutMe() {
 const TechStack = () => (
   <div className="max-lg:w-100 bg-[#24292e] p-3 rounded-xl shadow-2xl md:w-auto">
     <h1 className="flex gap-2 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-      <IconSignature className="h-6 w-6 text-neutral-500" />
+      <IconBrandPrisma className="h-6 w-6 text-neutral-500" />
       My Skills
     </h1>
     <span className="pt-3 md:pt-5 pb-2 font-normal text-sm md:text-base">
@@ -84,7 +84,7 @@ const items = [
     description: (
       <div>
         <h2 className="flex gap-2 font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-          <IconClipboardCopy className="h-6 w-6 text-neutral-500 bg-[1c1c1e]" />
+          <IconSignature className="h-6 w-6 text-neutral-500 bg-[1c1c1e]" />
           My Background
         </h2>
         <p className=" font-normal text-sm md:text-base">
@@ -137,7 +137,7 @@ const items = [
     header: (
       <div>
         <h2 className="flex gap-1 font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-          <IconFileBroken className="h-6 w-6 text-neutral-500" />
+          <IconUser className="h-6 w-6 text-neutral-500" />
           Who am I?
         </h2>
         <p className="font-normal text-sm md:text-base">

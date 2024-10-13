@@ -5,7 +5,7 @@ import { BackgroundGradientAnimation } from "./ui/background-gradient-animation"
 import { TypeAnimation } from "react-type-animation";
 
 
-export function AuroraBackgroundDemo() {
+export function Hero() {
   return (
     <div className="overflow-hidden" id="home">
       <BackgroundGradientAnimation>

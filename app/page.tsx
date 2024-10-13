@@ -1,6 +1,5 @@
 import { AboutMe } from "@/components/Aboutme";
-
-import { AuroraBackgroundDemo } from "@/components/Homeaurora";
+import { Hero } from "@/components/Homeaurora";
 import { Projects } from "@/components/Projects";
 import Navbar from "@/components/ui/Navbar";
 
@@ -9,7 +8,7 @@ export default function Home() {
     <>
       <div className="bg-black">
         <Navbar />
-        <AuroraBackgroundDemo />
+        <Hero />
         <AboutMe />
         <Projects />
       </div>
