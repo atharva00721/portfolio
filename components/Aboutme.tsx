@@ -21,7 +21,6 @@ export function AboutMe() {
             title={item.title}
             description={item.description}
             header={item.header}
-            // icon={item.icon}
             className={i === 1 || i === 6 ? "md:col-span-2" : ""}
           />
         ))}

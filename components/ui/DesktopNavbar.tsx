@@ -47,7 +47,7 @@ const DesktopNavbar: React.FC<DesktopNavbarProps> = ({ visible }) => {
           </li>
           <li>
             <h5 className="px-5 cursor-pointer transition-colors duration-300 hover:text-yellow-300 font-medium">
-              <Link to="projects" smooth={true} duration={500} >Achievements</Link>
+              <Link to="achievements" smooth={true} duration={500} >Achievements</Link>
             </h5>
           </li>
           <li></li>
