@@ -208,7 +208,7 @@ const cards = [
     title: "ToDo Web App",
     src: "/images/Todos.png",
     ctaText: "GitHub",
-    ctaLink: "/",
+    ctaLink: "https://github.com/atharva00721/ToDo-App",
     content: () => (
       <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
         <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
@@ -262,7 +262,7 @@ const cards = [
     title: "Ather Connect",
     src: "/images/Aetherconnect.png",
     ctaText: "GitHub",
-    ctaLink: "/",
+    ctaLink: "https://github.com/atharva00721/AetherConnect",
     content: () => (
       <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
         <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
@@ -327,7 +327,7 @@ const cards = [
     title: "The Watcher",
     src: "/images/theWatcher.png",
     ctaText: "GitHub",
-    ctaLink: "/",
+    ctaLink: "https://github.com/atharva00721/The-Watcher",
     content: () => (
       <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
         <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">

@@ -25,9 +25,19 @@ const Navbar: React.FC = () => {
   }, [prevScrollPos]);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsMobile(window.innerWidth <= 640);
-    }
+    const updateIsMobile = () => {
+      if (typeof window !== "undefined") {
+        setIsMobile(window.innerWidth <= 640);
+      }
+    };
+
+    updateIsMobile(); // Set initial value
+
+    window.addEventListener("resize", updateIsMobile);
+
+    return () => {
+      window.removeEventListener("resize", updateIsMobile);
+    };
   }, []);
 
   return (
