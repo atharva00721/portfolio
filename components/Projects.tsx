@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import { IconSignature } from "@tabler/icons-react";
+import { cards } from "./dataCards";
 
 export function Projects() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
@@ -163,12 +163,6 @@ export function Projects() {
                 >
                   {card.description}
                 </motion.p>
-                {/* <motion.p
-                  layoutId={`category-${card.category}-${id}`}
-                  className="text-white text-sm md:text-base font-medium font-sans text-left"
-                >
-                  {card.category}
-                </motion.p> */}
               </div>
             </div>
           </motion.div>
@@ -193,204 +187,10 @@ export const CloseIcon = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="h-4 w-4 text-black"
+      className="w-4 h-4 text-neutral-800 dark:text-neutral-50"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M18 6l-12 12" />
-      <path d="M6 6l12 12" />
+      <line x1="18" y1="6" x2="6" y2="18" />
+      <line x1="6" y1="6" x2="18" y2="18" />
     </motion.svg>
   );
 };
-
-const cards = [
-  {
-    description: "A Simple ToDo Web Application",
-    title: "ToDo Web App",
-    src: "/images/Todos.png",
-    ctaText: "GitHub",
-    ctaLink: "https://github.com/atharva00721/ToDo-App",
-    content: () => (
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-        <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-          <span className="font-bold text-neutral-700 dark:text-neutral-200">
-            Basic ToDo Web App
-          </span>
-          , a simple and user-friendly task management web application. Built
-          with
-          <span className="font-bold"> React.js</span> and styled using
-          <span className="font-bold"> Tailwind CSS</span>, this ToDo app helps
-          users to add, edit, and organize their daily tasks efficiently.
-          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-            <IconSignature className="h-6 w-6 text-neutral-500" />
-            TechStack For the Project
-          </h5>
-          <span className="pt-3 md:pt-5 pb-2 font-normal text-sm md:text-base">
-            - Frontend Framework
-            <span className="py-3 ">
-              <p className="space-y-2">
-                <img
-                  src="https://skillicons.dev/icons?i=react,tailwind"
-                  alt="Frontend"
-                />
-              </p>
-            </span>
-          </span>
-          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-            Features
-          </h5>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Add new tasks</li>
-            <li>Edit existing tasks</li>
-            <li>Organize tasks by priority</li>
-            <li>Delete tasks once completed</li>
-          </ul>
-          <Image
-            priority
-            width={1000}
-            height={1000}
-            src={"/images/Todos.png"}
-            alt={"todoApp"}
-            className="w-full mt-5 rounded-xl object-cover"
-          />
-        </div>
-      </div>
-    ),
-    category: "Web Development",
-  },
-  {
-    description: "A Video Calling Web App",
-    title: "Ather Connect",
-    src: "/images/Aetherconnect.png",
-    ctaText: "GitHub",
-    ctaLink: "https://github.com/atharva00721/AetherConnect",
-    content: () => (
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-        <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-          <span className="font-bold text-neutral-700 dark:text-neutral-200">
-            AtherConnect
-          </span>
-          , a web-based video calling application built using
-          <span className="font-bold"> Next.js</span>,
-          <span className="font-bold"> Tailwind CSS</span>,
-          <span className="font-bold"> Clerk</span>, and
-          <span className="font-bold"> StreamAPI</span>. The platform allows
-          users to schedule and record meetings, interact with emoji reactions,
-          and chat with participants in real time, enhancing the video
-          conferencing experience.
-          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-            <IconSignature className="h-6 w-6 text-neutral-500" />
-            TechStack For the Project
-          </h5>
-          <span className="pt-3 md:pt-5 space-y-2 pb-2 font-normal text-sm md:text-base">
-            - Frontend Framework
-            <span className="py-3 ">
-              <p className="space-y-2">
-                <img
-                  src="https://skillicons.dev/icons?i=nextjs,tailwind"
-                  alt="Frontend"
-                />
-              </p>
-            </span>
-            - Authentication
-            <span className="py-3">
-              <p className="code-block ">Clerk Auth</p>
-            </span>
-            - Video & Chat API
-            <span className="py-2">
-              <p className="code-block ">Stream API</p>
-            </span>
-          </span>
-          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-            Features
-          </h5>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Schedule a meeting</li>
-            <li>Record meetings for future reference</li>
-            <li>React with emojis during meetings</li>
-            <li>Chat with participants in real-time</li>
-          </ul>
-          <Image
-            priority
-            width={1000}
-            height={1000}
-            src={"/images/Aetherconnect.png"}
-            alt={"atherconnect"}
-            className="w-full mt-5 rounded-xl object-cover"
-          />
-        </div>
-      </div>
-    ),
-    category: "Web Development",
-  },
-  {
-    description: "AI-surveillance",
-    title: "The Watcher",
-    src: "/images/theWatcher.png",
-    ctaText: "GitHub",
-    ctaLink: "https://github.com/atharva00721/The-Watcher",
-    content: () => (
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-        <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-          <span className="font-bold text-neutral-700 dark:text-neutral-200">
-            The Watcher
-          </span>
-          , an AI-powered surveillance system that processes real-time CCTV
-          footage to detect violence, crimes, or accidents. By identifying
-          unusual events and alerting authorities, the project aims to enhance
-          public safety.
-          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-            <IconSignature className="h-6 w-6 text-neutral-500" />
-            TechStack For the Project
-          </h5>
-          <span className="pt-3 md:pt-5 pb-2 font-normal text-sm md:text-base">
-            - AI/ML Frameworks
-            <span className="py-3 ">
-              <p className="space-y-2">
-                <img
-                  src="https://skillicons.dev/icons?i=pytorch,tensorflow"
-                  alt="Backend"
-                />
-                <span className="code-block ">CLIP Model (OpenAI)</span>
-              </p>
-            </span>
-            - Video Processing
-            <span className="py-3">
-              <p className="space-y-3">
-                <img
-                  src="https://skillicons.dev/icons?i=opencv,py"
-                  alt="Frontend"
-                />
-              </p>
-            </span>
-            - Web Framework & User Interface
-            <span className="py-2">
-              <p className="space-y-3">
-                <img src="https://skillicons.dev/icons?i=react" alt="Backend" />
-                <span className="code-block">Streamlit</span>
-              </p>
-            </span>
-            - Backend & APIs
-            <span className="py-2">
-              <p className="space-y-2">
-                <img
-                  src="https://skillicons.dev/icons?i=flask,fastapi"
-                  alt="Backend"
-                />
-                {/* <span className="code-block ">Streamlit</span> */}
-              </p>
-            </span>
-          </span>
-          <Image
-            priority
-            width={1000}
-            height={1000}
-            src={"/images/theWatcher.png"}
-            alt={"thewatcher"}
-            className="w-full mt-5 rounded-xl object-cover"
-          />
-        </div>
-      </div>
-    ),
-    category: "AI/ML",
-  },
-];
