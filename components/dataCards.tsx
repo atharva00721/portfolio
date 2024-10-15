@@ -177,7 +177,7 @@ export const cards: CardData[] = [
     category: "AI/ML",
   },
   {
-    description: "AI-powered Movie Recommendation System",
+    description: "AI Movie Recommendation System",
     title: "Aether Cinema",
     src: "/images/AetherCinema.jpg",
     ctaText: "GitHub",
