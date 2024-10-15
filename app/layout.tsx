@@ -17,6 +17,12 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Portfolio~",
   description: "Atharva's Portfolio",
+  icons: [
+    {
+      rel: "icon",
+      url: "public/images/moon.png",
+    },
+  ],
 };
 
 export default function RootLayout({
