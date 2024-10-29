@@ -35,10 +35,10 @@ export function Projects() {
 
   return (
     <div className="text-white max-w-[80%] mx-auto mt-5 md:my-20" id="projects">
-      <h2 className="max-w-7xl mx-auto text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans ">
+      <h2 className="mb-5 mx-auto text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans ">
         Projects
       </h2>
-      <hr className="mb-5" />
+
 
       <AnimatePresence>
         {active && typeof active === "object" && (

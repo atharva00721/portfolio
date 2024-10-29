@@ -59,12 +59,12 @@ export function AchievementsAndCertifications() {
 
   return (
     <div className="text-white max-w-[80%] mx-auto mt-5 md:my-20" id="achievements" >
-      <h2 className="max-w-7xl mx-auto text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
+      <h2 className="mb-5 mx-auto text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans">
         Achievements/
         <br />
         Certifications
       </h2>
-      <hr className="mb-5" />
+
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  relative z-10 py-10 max-w-7xl mx-auto">
         {achievements.map((feature, index) => (
           <Feature key={feature.title} {...feature} index={index} />

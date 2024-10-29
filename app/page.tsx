@@ -7,7 +7,7 @@ import Navbar from "@/components/ui/Navbar";
 export default function Home() {
   return (
     <>
-      <div className="bg-[#171717]">
+      <div className="bg-black">
         <Navbar />
         <Hero />
         <AboutMe />
