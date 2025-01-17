@@ -312,7 +312,7 @@ export const cards: CardData[] = [
     title: "Aether LMS",
     src: "/images/aehterlogo.jpg",
     ctaText: "GitHub",
-    ctaLink: "https://github.com/atharva00721/Aether-LMS",
+    ctaLink: "https://github.com/atharva00721/AetherLMS",
     content: () => (
       <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
         <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
