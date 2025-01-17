@@ -77,105 +77,105 @@ export const cards: CardData[] = [
     ),
     category: "Web Development",
   },
-  // {
-  //   description: "AI-surveillance",
-  //   title: "The Watcher",
-  //   src: "/images/theWatcher.png",
-  //   ctaText: "GitHub",
-  //   ctaLink: "https://github.com/atharva00721/The-Watcher",
-  //   content: () => (
-  //     <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
-  //       <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-  //         <span className="font-bold text-neutral-700 dark:text-neutral-200">
-  //           The Watcher
-  //         </span>
-  //         , an AI-powered surveillance system that processes real-time CCTV
-  //         footage to detect violence, crimes, or accidents. By identifying
-  //         unusual events and alerting authorities, the project aims to enhance
-  //         public safety.
-  //         <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-  //           <IconSignature className="h-6 w-6 text-neutral-500" />
-  //           TechStack For the Project
-  //         </h5>
-  //         <span className="pt-3 md:pt-5 pb-2 font-normal text-sm md:text-base">
-  //           - AI/ML Frameworks
-  //           <span className="py-3 ">
-  //             <p className="space-y-2">
-  //               <img
-  //                 src="https://skillicons.dev/icons?i=pytorch,tensorflow"
-  //                 alt="Backend"
-  //               />
-  //               <span className="code-block ">CLIP Model (OpenAI)</span>
-  //             </p>
-  //           </span>
-  //           - Video Processing
-  //           <span className="py-3">
-  //             <p className="space-y-3">
-  //               <img
-  //                 src="https://skillicons.dev/icons?i=opencv,py"
-  //                 alt="Frontend"
-  //               />
-  //             </p>
-  //           </span>
-  //           - Web Framework & User Interface
-  //           <span className="py-2">
-  //             <p className="space-y-3">
-  //               <img src="https://skillicons.dev/icons?i=react" alt="Backend" />
-  //               <span className="code-block">Streamlit</span>
-  //             </p>
-  //           </span>
-  //           - Backend & APIs
-  //           <span className="py-2">
-  //             <p className="space-y-2">
-  //               <img
-  //                 src="https://skillicons.dev/icons?i=flask,fastapi"
-  //                 alt="Backend"
-  //               />
-  //             </p>
-  //           </span>
-  //         </span>
-  //         <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-  //           Features
-  //         </h5>
-  //         <ul className="list-disc pl-5 space-y-2">
-  //           <li>Real-time video processing for anomaly detection</li>
-  //           <li>
-  //             Automated alerts for authorities in case of violence or crime
-  //             detection
-  //           </li>
-  //           <li>
-  //             Supports multiple types of events like accidents, fights, and
-  //             vandalism
-  //           </li>
-  //           <li>Scans CCTV footage continuously for potential threats</li>
-  //         </ul>
-  //         <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
-  //           Future Goals
-  //         </h5>
-  //         <ul className="list-disc pl-5 space-y-2">
-  //           <li>Make the system cloud-friendly for scalability</li>
-  //           <li>
-  //             Enable remote access to the system through cloud integration
-  //           </li>
-  //           <li>
-  //             Provide real-time processing on the cloud to handle large-scale
-  //             surveillance systems
-  //           </li>
-  //           <li>Optimize for lower latency in live video analysis</li>
-  //         </ul>
-  //         <Image
-  //           priority
-  //           width={1000}
-  //           height={1000}
-  //           src={"/images/theWatcher.png"}
-  //           alt={"thewatcher"}
-  //           className="w-full mt-5 rounded-xl object-cover"
-  //         />
-  //       </div>
-  //     </div>
-  //   ),
-  //   category: "AI/ML",
-  // },
+  {
+    description: "AI-surveillance",
+    title: "The Watcher",
+    src: "/images/theWatcher.png",
+    ctaText: "GitHub",
+    ctaLink: "https://github.com/atharva00721/The-Watcher",
+    content: () => (
+      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
+        <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700 dark:text-neutral-200">
+            The Watcher
+          </span>
+          , an AI-powered surveillance system that processes real-time CCTV
+          footage to detect violence, crimes, or accidents. By identifying
+          unusual events and alerting authorities, the project aims to enhance
+          public safety.
+          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
+            <IconSignature className="h-6 w-6 text-neutral-500" />
+            TechStack For the Project
+          </h5>
+          <span className="pt-3 md:pt-5 pb-2 font-normal text-sm md:text-base">
+            - AI/ML Frameworks
+            <span className="py-3 ">
+              <p className="space-y-2">
+                <img
+                  src="https://skillicons.dev/icons?i=pytorch,tensorflow"
+                  alt="Backend"
+                />
+                <span className="code-block ">CLIP Model (OpenAI)</span>
+              </p>
+            </span>
+            - Video Processing
+            <span className="py-3">
+              <p className="space-y-3">
+                <img
+                  src="https://skillicons.dev/icons?i=opencv,py"
+                  alt="Frontend"
+                />
+              </p>
+            </span>
+            - Web Framework & User Interface
+            <span className="py-2">
+              <p className="space-y-3">
+                <img src="https://skillicons.dev/icons?i=react" alt="Backend" />
+                <span className="code-block">Streamlit</span>
+              </p>
+            </span>
+            - Backend & APIs
+            <span className="py-2">
+              <p className="space-y-2">
+                <img
+                  src="https://skillicons.dev/icons?i=flask,fastapi"
+                  alt="Backend"
+                />
+              </p>
+            </span>
+          </span>
+          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
+            Features
+          </h5>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Real-time video processing for anomaly detection</li>
+            <li>
+              Automated alerts for authorities in case of violence or crime
+              detection
+            </li>
+            <li>
+              Supports multiple types of events like accidents, fights, and
+              vandalism
+            </li>
+            <li>Scans CCTV footage continuously for potential threats</li>
+          </ul>
+          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
+            Future Goals
+          </h5>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Make the system cloud-friendly for scalability</li>
+            <li>
+              Enable remote access to the system through cloud integration
+            </li>
+            <li>
+              Provide real-time processing on the cloud to handle large-scale
+              surveillance systems
+            </li>
+            <li>Optimize for lower latency in live video analysis</li>
+          </ul>
+          <Image
+            priority
+            width={1000}
+            height={1000}
+            src={"/images/theWatcher.png"}
+            alt={"thewatcher"}
+            className="w-full mt-5 rounded-xl object-cover"
+          />
+        </div>
+      </div>
+    ),
+    category: "AI/ML",
+  },
   {
     description: "AI Movie Recommendation System",
     title: "Aether Cinema",
@@ -306,5 +306,91 @@ export const cards: CardData[] = [
       </div>
     ),
     category: "Web Development",
+  },
+  {
+    description: "AI-powered personalized learning management system",
+    title: "Aether LMS",
+    src: "/images/aehterlogo.jpg",
+    ctaText: "GitHub",
+    ctaLink: "https://github.com/atharva00721/Aether-LMS",
+    content: () => (
+      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4">
+        <div className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+          <span className="font-bold text-neutral-700 dark:text-neutral-200">
+            Aether LMS
+          </span>
+          , a next-generation learning management system leveraging AI to
+          provide personalized learning paths for users. It combines advanced
+          AI/ML models with a modern and responsive interface for a seamless
+          educational experience 🎓.
+          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
+            <IconSignature className="h-6 w-6 text-neutral-500" />
+            TechStack For the Project
+          </h5>
+          <span className="pt-3 md:pt-5 pb-2 font-normal text-sm md:text-base">
+            - Web Framework & User Interface
+            <span className="py-3">
+              <p className="space-y-3">
+                <img
+                  src="https://skillicons.dev/icons?i=nextjs,tailwind"
+                  alt="Next.js & Tailwind"
+                />
+                <span className="code-block">Next.js, TailwindCSS</span>
+              </p>
+            </span>
+            - Database
+            <span className="py-2">
+              <p className="space-y-2">
+                <img
+                  src="https://skillicons.dev/icons?i=postgresql"
+                  alt="PostgreSQL"
+                />
+                <span className="code-block">NeonDB (PostgreSQL)</span>
+              </p>
+            </span>
+          </span>
+          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
+            Features
+          </h5>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>learning recommendations</li>
+            <li>Interactive and responsive UI for seamless navigation</li>
+            <li>Real-time progress tracking and analytics</li>
+            <li>Secure and scalable database for managing user data</li>
+          </ul>
+          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
+            Future Goals
+          </h5>
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Incorporate gamification for enhanced engagement</li>
+            <li>Expand AI models for adaptive assessments</li>
+            <li>Deploy on a cloud infrastructure for global accessibility</li>
+          </ul>
+          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
+            Landing page
+          </h5>
+          <Image
+            priority
+            width={1000}
+            height={1000}
+            src={"/images/LMS_Landingpage.jpeg"}
+            alt={"LMS_Landingpage"}
+            className="w-full mt-5 rounded-xl object-cover"
+          />
+          <h5 className="flex gap-2 pt-5 text-white font-bold underline-offset-4 tracking-wider text-lg md:text-xl">
+            Club UI
+          </h5>
+          <Image
+            priority
+            width={1000}
+            height={1000}
+            src={"/images/AetherLMS_UI.png"}
+            alt={"AetherLMS_UI"}
+            className="w-full mt-5 rounded-xl object-cover"
+          />
+        </div>
+      </div>
+    ),
+    category: "Web Developoment",
   },
 ];
